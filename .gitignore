@@ -62,9 +62,6 @@ node_modules
 coverage
 .nyc_output
 
-# locks
-package-lock.json
-yarn.lock
 
 # file containing environment variables such as secret api keys
 # used in conjunction with dotenv package
