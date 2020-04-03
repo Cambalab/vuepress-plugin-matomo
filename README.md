@@ -1,45 +1,27 @@
-# VuePress Plugin Minimal Google Analytics
+# VuePress Plugin Matomo Analytics
 
-> Minimal Google Analytics plugin for VuePress 1.x
+This project add [Matomo](https://matomo.org/) support for [vuepress](https://vuepress.vuejs.org/).
 
-[![Build Status](https://img.shields.io/travis/webmasterish/vuepress-plugin-minimal-analytics/master.svg?style=flat-square)](https://travis-ci.org/webmasterish/vuepress-plugin-minimal-analytics)
-[![npm version](https://img.shields.io/npm/v/vuepress-plugin-minimal-analytics.svg?style=flat-square)](http://npm.im/vuepress-plugin-minimal-analytics)
-[![Greenkeeper badge](https://badges.greenkeeper.io/webmasterish/vuepress-plugin-minimal-analytics.svg?style=flat-square)](https://greenkeeper.io/)
-[![MIT License](https://img.shields.io/npm/l/express.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+FYI Matomo is a powerful web analytics platform that gives you and your business 100% data ownership and user privacy protection.
 
-
-## Why
-
-Because sometimes all you need is just the page views
-without all the bloated libraries.
-
-
-## What
-
-This plugin is based on the official VuePress plugin  [@vuepress/plugin-google-analytics](https://github.com/vuejs/vuepress/tree/master/packages/%40vuepress/plugin-google-analytics) - [npm](https://www.npmjs.com/package/@vuepress/plugin-google-analytics).
-
-The difference betweeen this plugin and the official one is that it uses a light
-version of the tracking code as introduced
-by 🌱 [minimalanalytics.com](https://minimalanalytics.com/) - source code in [this gist](https://gist.github.com/DavidKuennen/443121e692175d6fc145e1efb0284ec9).
+> This plugin is based on the official VuePress plugin  [@vuepress/plugin-google-analytics](https://github.com/vuejs/vuepress/tree/master/packages/%40vuepress/plugin-google-analytics) - [npm](https://www.npmjs.com/package/@vuepress/plugin-google-analytics).
 
 
 ## Install
 
-
 ```sh
-$ npm install -D vuepress-plugin-minimal-analytics
+$ npm install -D vuepress-plugin-matomo
 
 # or
 
-$ yarn add -D vuepress-plugin-minimal-analytics
+$ yarn add -D vuepress-plugin-matomo
 ```
-
 
 ## Usage
 
-Add `vuepress-plugin-minimal-analytics` in your site or theme config file.
+Add `vuepress-plugin-matomo` in your site or theme config file.
 
-> See [official docs on using a plugin](https://vuepress.vuejs.org/plugin/using-a-plugin.html)
+> See [official docs](https://vuepress.vuejs.org/plugin/using-a-plugin.html)
 
 
 ```js
@@ -47,36 +29,20 @@ Add `vuepress-plugin-minimal-analytics` in your site or theme config file.
 // or
 // .vuepress/theme/index.js
 
-// replace 'XX-XXXXXXXXX-X' with your tracking id
 module.exports = {
   plugins: [
-    ['minimal-analytics', {ga: 'XX-XXXXXXXXX-X'}]
+    ['matomo', {trackerUrl: 'XXX', siteId: 'YYY'}]
   ]
 }
 ```
 
-
-## Options
-
-> See Plugin Option API [official docs](https://vuepress.vuejs.org/plugin/option-api.html)
-
-### ga
-
-- Type: `string`
-- Default: `undefined`
-
-Provide the Google Analytics ID to enable integration.
-
-
-## Reference
-
-- VuePress official [plugin docs](https://vuepress.vuejs.org/plugin/)
-- VuePress official [@vuepress/plugin-google-analytics](https://github.com/vuejs/vuepress/tree/master/packages/%40vuepress/plugin-google-analytics) - [npm](https://www.npmjs.com/package/@vuepress/plugin-google-analytics)
-- Minimal Analytics Snippet [Gist](https://gist.github.com/DavidKuennen/443121e692175d6fc145e1efb0284ec9)
-  by [@DavidKuennen](https://github.com/DavidKuennen)
-- Google Analytics official [endpoint documentation](https://developers.google.com/analytics/devguides/collection/protocol/v1/reference)
-
-
 ## License
 
-MIT © [webmasterish](https://webmasterish.com)
+[**GNU General Public License version 3**](https://opensource.org/licenses/GPL-3.0)
+
+# <Divider>
+
+<p align="center">
+  <strong> with :green_heart: :purple_heart: :heart: by <a href="https://camba.coop" target="_blank" rel="noopener noreferrer"><img width="20" src="http://camba.coop/assets/signature/no_text_logo.png" /> cambá.coop</a> :earth_americas: Buenos Aires, Argentina
+  </strong>
+</p>
