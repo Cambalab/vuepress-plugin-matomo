@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/webmasterish/vuepress-plugin-minimal-analytics.git"
+    "url": "git+https://github.com/cambalab/vuepress-plugin-minimal-analytics.git"
   },
   "keywords": [
     "vue",
@@ -29,7 +29,7 @@
   "license": "GPL-3.0",
   "homepage": "https://github.com/cambalab/vuepress-plugin-matomo",
   "bugs": {
-    "url": "https://github.com/webmasterish/vuepress-plugin-matomo/issues"
+    "url": "https://github.com/cambalab/vuepress-plugin-matomo/issues"
   },
   "engines": {
     "node": ">=8"
